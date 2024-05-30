@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="heading">
+            <h1>
+                  Online Calculator
+            </h1>
+        </div>
+        
+        <table border="1" cellspacing= 6 cellpadoing=2>
+            <tr>
+            <th colspan=5 rowspan=1>
+                <input type="text" id="display" readonly>
+            </th>
+            </tr>
+            <tr>
+            <th colspan=2 rowspan=1>
+                <button onclick="clearDisplay()">Clear</button>
+            </th>
+            <th colspan=1 rowspan=1>
+                <button onclick="calculate()">=</button>
+            </th>
+            <th colspan=1 rowspan=1>
+                <button onclick="appendOperator('(')">(</button>
+            </th>
+            <th colspan=1 rowspan=1>
+                <button onclick="appendOperator(')')">)</button>
+            </th>
+            </tr>
+            
+            <tr>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendOperator('*')">*</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendOperator('/')">/</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendOperator('+')">+</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendOperator('-')">-</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('.')">.</button>
+                </th>
+            </tr>
+            <tr>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('1')">1</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('2')">2</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('3')">3</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('4')">4</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('5')">5</button>
+                </th>
+            </tr>
+            <tr>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('6')">6</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('7')">7</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('8')">8</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('9')">9</button>
+                </th>
+                <th colspan=1 rowspan=1>
+                    <button onclick="appendNumber('0')">0</button>
+                </th>
+            </tr>
+         </table>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
